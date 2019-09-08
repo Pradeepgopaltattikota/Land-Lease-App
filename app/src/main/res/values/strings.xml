@@ -1,5 +1,5 @@
 <resources>
- <string name="app_name">LandLeaseLocator</string>
+    <string name="app_name">LandLeaseLocator</string>
     <string name="l_amp_l"><![CDATA[L&L]]></string>
     <string name="land_amp_lease"><![CDATA[Land & Lease]]></string>
     <string name="admin">admin</string>
