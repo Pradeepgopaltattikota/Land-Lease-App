@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "470000457501",
+    "firebase_url": "https://landleaselocator.firebaseio.com",
+    "project_id": "landleaselocator",
+    "storage_bucket": "landleaselocator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470000457501:android:1524fc7dffa8c76410f3f4",
+        "android_client_info": {
+          "package_name": "com.example.landleaselocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470000457501-h9ol9j89frqpjm3etolelssk6qslcnvt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.landleaselocator",
+            "certificate_hash": "684056ab3b43a1f6c9c6b3c680f93ea34cf7c43a"
+          }
+        },
+        {
+          "client_id": "470000457501-jsfq248a7dtv06tpcnqesd37unaafk0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDglNaDea6wg8WDykmFI7VBmlgelCnUxVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470000457501-jsfq248a7dtv06tpcnqesd37unaafk0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470000457501:android:8cc9cbe39314963810f3f4",
+        "android_client_info": {
+          "package_name": "com.example.myproject.landleaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470000457501-agmdb6jossc8hitnf7j0euqv0dimrcvu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myproject.landleaseapp",
+            "certificate_hash": "42adbcad4a188233682497541b91db9e3311744d"
+          }
+        },
+        {
+          "client_id": "470000457501-jsfq248a7dtv06tpcnqesd37unaafk0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDglNaDea6wg8WDykmFI7VBmlgelCnUxVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470000457501-jsfq248a7dtv06tpcnqesd37unaafk0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

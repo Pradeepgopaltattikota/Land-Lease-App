@@ -14,5 +14,15 @@
     <string name="email">Email</string>
     <string name="retype">Retype Password</string>
     <string name="already"><u>Already a user ? Login</u></string>
+    <string name="new_user">Create a new user !</string>
+    <string name="home">home</string>
+    <string name="profile">profile</string>
+    <string name="about_us">about us</string>
+    <string name="LL"> LL Solutions </string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="logout">Logout</string>
+    <string name="submit">submit</string>
+
 
 </resources>
