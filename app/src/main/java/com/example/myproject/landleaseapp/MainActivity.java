@@ -206,19 +206,19 @@ public class MainActivity extends AppCompatActivity {
                 holder.setRateT(model.getRate());
                 holder.setImgT(model.getImg());
 
-//                holder.cardT.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        Intent na = new  Intent(MainActivity.this,FullPostView.class);
-//                        na.putExtra("name",model.getName());
-//                        na.putExtra("place",model.getPlace());
-//                        na.putExtra("add",model.getAdd());
-//                        na.putExtra("rate",model.getRate());
-//                        na.putExtra("link",model.getLink());
-//                        na.putExtra("img",model.getImg());
-//                        startActivity(na);
-//                    }
-//                });
+                holder.cardT.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent na = new  Intent(MainActivity.this,FullPostView.class);
+                        na.putExtra("name",model.getName());
+                        na.putExtra("place",model.getPlace());
+                        na.putExtra("add",model.getAdd());
+                        na.putExtra("rate",model.getRate());
+                        na.putExtra("link",model.getLink());
+                        na.putExtra("img",model.getImg());
+                        startActivity(na);
+                    }
+                });
 
             }
 
