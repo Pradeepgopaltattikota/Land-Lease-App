@@ -72,9 +72,8 @@ public class MainActivity extends AppCompatActivity {
         final String uid=FirebaseAuth.getInstance().getUid().toString();
 
         fButton = (FloatingActionButton)findViewById(R.id.create_post);
-        final ArrayList<String> adminsId=new ArrayList<>();
-        adminsId.add("bl9goWqgfKdjALZkXrFhuU3oHm03");
-        if(adminsId.contains(uid)){
+        final String adminId = "kjXcync5ppSiOzyXYRLgIvivbuI3";
+        if(adminId.equals(uid)){
             fButton.setImageResource(R.drawable.ic_edit);
         }else {
             fButton.setImageResource(R.drawable.ic_edit_search);
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         fButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(adminsId.contains(uid)) {
+                if(adminId.equals(uid)) {
                     Intent na = new Intent(MainActivity.this, CreateLandPost.class);
                     startActivity(na);
                 }else {
@@ -275,11 +274,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void setRateT(String rate) {
-            rateT.setText(rate);
+            rateT.setText("Rate : "+rate);
         }
 
         public void setAddT(String add) {
-            addT.setText(add);
+            addT.setText("Address : "+add);
         }
 
         public void setImgT(String img) {
@@ -291,8 +290,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        finish();
-        System.exit(0);
+        Intent a = new Intent(Intent.ACTION_MAIN);
+        a.addCategory(Intent.CATEGORY_HOME);
+        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(a);
     }
 }
 

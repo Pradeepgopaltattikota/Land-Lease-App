@@ -39,6 +39,9 @@ public class StartUp extends AppCompatActivity {
         uButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent na1 = new Intent(StartUp.this,UserAuthLogin.class);
+                startActivity(na1);
+                finish();
             }
         });
 

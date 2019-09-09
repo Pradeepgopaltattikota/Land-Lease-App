@@ -42,7 +42,7 @@ public class UserAuthLogin extends AppCompatActivity {
             lUsername = (EditText) findViewById(R.id.l_username);
             lPassword = (EditText) findViewById(R.id.l_password);
 
-            //lProgressbar = (ProgressBar)findViewById(R.id.al_progress_bar);
+            lProgressbar = (ProgressBar)findViewById(R.id.al_progress_bar);
 
             lLoginB = (Button)findViewById(R.id.lf_button);
 

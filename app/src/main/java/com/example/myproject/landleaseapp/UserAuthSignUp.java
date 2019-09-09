@@ -99,14 +99,14 @@ public class UserAuthSignUp extends AppCompatActivity {
                                                             Intent na = new Intent(UserAuthSignUp.this, MainActivity.class);
                                                             startActivity(na);
                                                         } else {
-                                                            Toast.makeText(UserAuthSignUp.this, "Failure !", Toast.LENGTH_LONG).show();
+                                                            Toast.makeText(UserAuthSignUp.this, "Failure in creating user !", Toast.LENGTH_LONG).show();
                                                             asProgressbar.setVisibility(View.GONE);
                                                         }
                                                     }
                                                 });
 
                                     } else {
-                                        Toast.makeText(UserAuthSignUp.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(UserAuthSignUp.this, "Authentication failed."+task.getException(), Toast.LENGTH_SHORT).show();
                                         asProgressbar.setVisibility(View.GONE);
                                     }
 

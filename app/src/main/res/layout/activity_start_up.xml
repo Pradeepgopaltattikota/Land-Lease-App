@@ -76,7 +76,7 @@
         android:drawableStart="@drawable/admin"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:text="@string/user"
+        android:text="@string/admin"
         android:textSize="18sp"
         android:textStyle="bold" />
 

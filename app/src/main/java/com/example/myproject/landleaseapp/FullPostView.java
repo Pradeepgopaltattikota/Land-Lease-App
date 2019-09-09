@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -21,6 +22,7 @@ public class FullPostView extends AppCompatActivity {
     private TextView fName, fPlace, fAdd, fRate, fLink;
     private ImageView fImg;
     private Button fButton;
+    private String name,place,add,link,img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +37,24 @@ public class FullPostView extends AppCompatActivity {
         fButton = (Button) findViewById(R.id.full_button);
 
         final Intent intent = getIntent();
-        fName.setText(intent.getStringExtra("name"));
-        fPlace.setText(intent.getStringExtra("place"));
-        fAdd.setText(intent.getStringExtra("add"));
-        fLink.setText(intent.getStringExtra("link"));
 
-        Picasso.get().load(intent.getStringExtra("img"));
+        name = intent.getStringExtra("name");
+        place = intent.getStringExtra("place");
+        add = intent.getStringExtra("add");
+        link = intent.getStringExtra("link");
+        img = intent.getStringExtra("img");
+
+        if(name.isEmpty() && place.isEmpty() && add.isEmpty() && link.isEmpty() && img.isEmpty()){
+            Toast.makeText(this, "Error in retrieving data ! pls try again", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,MainActivity.class));
+        }
+
+
+        fName.setText(name);
+        fAdd.setText("Address : "+add);
+        fPlace.setText("Place : "+place);
+        Picasso.get().load(img).into(fImg);
+        fLink.setText("Link : "+link);
 
         fButton.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
